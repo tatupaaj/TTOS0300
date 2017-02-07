@@ -23,7 +23,7 @@ namespace wpfHello
         private int laskuri;
 
         public MainWindow()
-        {
+        { 
             InitializeComponent();
             laskuri = 0;
             textBlock1.Text = laskuri.ToString();
