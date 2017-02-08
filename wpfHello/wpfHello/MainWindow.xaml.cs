@@ -26,15 +26,18 @@ namespace wpfHello
         { 
             InitializeComponent();
             laskuri = 0;
-            textBlock1.Text = laskuri.ToString();
+            txbCounter.Text = laskuri.ToString();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            textBlock.Text = "Hello " + textBox.Text;
-            MessageBox.Show("Terve " + textBox.Text, "Tatu's Messut");
+            txbHello.Text = "Hello " + txtName.Text;
             laskuri++;
-            textBlock1.Text = laskuri.ToString();
+            txbCounter.Text = laskuri.ToString();
+            txbMessage.Text = "Painoit buttonia btnSayHello";
+           /* MessageBox.Show("Terve " + txtName.Text, "Tatu's Messut");
+            laskuri++;
+            txbCounter.Text = laskuri.ToString();*/
         }
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
