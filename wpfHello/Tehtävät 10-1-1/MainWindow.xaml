@@ -9,11 +9,11 @@
     <Grid>
         <StackPanel>
             <StackPanel>
-                <CheckBox x:Name="chcProduct" Content="CheckBox" Margin="10" FontSize="14" Checked="chcProduct_Checked"/>
-                <CheckBox x:Name="chcProduct1" Content="CheckBox" Margin="10" FontSize="14"/>
-                <CheckBox x:Name="chcProduct2" Content="CheckBox" Margin="10" FontSize="14"/>
-                <CheckBox x:Name="chcProduct3" Content="CheckBox" Margin="10" FontSize="14"/>
-                <Button x:Name="btnBuy" Content="Buy" Margin="10" Width="60" HorizontalAlignment="Left" FontSize="14"/>
+                <CheckBox x:Name="chcMaito" Content="Maito" Margin="10" FontSize="14" Checked="chcMaito_Checked"/>
+                <CheckBox x:Name="chcPepsi" Content="Pepsi" Margin="10" FontSize="14" Checked="chcPepsi_Checked"/>
+                <CheckBox x:Name="chcJuusto" Content="Juusto" Margin="10" FontSize="14" Checked="chcJuusto_Checked"/>
+                <CheckBox x:Name="chcKana" Content="Kana" Margin="10" FontSize="14" Checked="chcKana_Checked"/>
+                <Button x:Name="btnBuy" Content="Buy" Margin="10" Width="60" HorizontalAlignment="Left" FontSize="14" Click="btnBuy_Click"/>
             </StackPanel>
             <StackPanel>
                 <TextBlock x:Name="txbShopping" TextWrapping="Wrap" Text="Shopping List" FontSize="16"/>

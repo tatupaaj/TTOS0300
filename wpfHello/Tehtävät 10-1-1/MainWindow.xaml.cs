@@ -25,12 +25,45 @@ namespace Tehtävät_10_1_1
             InitializeComponent();
         }
 
-        private void chcProduct_Checked(object sender, RoutedEventArgs e)
+
+        private void chcMaito_Checked(object sender, RoutedEventArgs e)
+          {
+          }
+
+          private void chcPepsi_Checked(object sender, RoutedEventArgs e)
+          {
+          }
+
+          private void chcJuusto_Checked(object sender, RoutedEventArgs e)
+          {
+          }
+
+          private void chcKana_Checked(object sender, RoutedEventArgs e)
+          {
+          }
+
+        private void btnBuy_Click(object sender, RoutedEventArgs e)
         {
-            if ((bool)chcProduct.IsChecked)
+            if ((bool)chcMaito.IsChecked)
             {
-                txbList.Text = ""+ chcProduct;
+                txbList.Text = "Maito";
+            }
+
+            if ((bool)chcPepsi.IsChecked)
+            {
+                txbList.Text = "Pepsi";
+            }
+
+            if ((bool)chcJuusto.IsChecked)
+            {
+                txbList.Text = "Juusto";
+            }
+
+            if ((bool)chcKana.IsChecked)
+            {
+                txbList.Text = "Kana";
             }
         }
     }
 }
+
