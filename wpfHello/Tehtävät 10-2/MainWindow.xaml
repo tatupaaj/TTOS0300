@@ -6,16 +6,20 @@
         xmlns:local="clr-namespace:Tehtävät_10_2"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <StackPanel Margin="120,95,128,105" Orientation="Horizontal">
-            <StackPanel HorizontalAlignment="Left" Width="97" Height="119">
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="Login:" Margin="5" Width="97" HorizontalAlignment="Left"/>
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="Password:" Margin="5,5,5,5" Width="97" HorizontalAlignment="Left"/>
-                <Button x:Name="btnLogin" Content="Login" Width="75"/>
-            </StackPanel>
-            <StackPanel HorizontalAlignment="Right" Width="">
-                
-            </StackPanel>
-        </StackPanel>
+    <Grid Background="Khaki">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblLogin" Content="Login: " Grid.Row="0" Grid.Column="0"/>
+        <TextBox x:Name="txtLogin" Grid.Row="0" Grid.Column="1"/>
+        <Label x:Name="lblPass" Content="Password: " Grid.Row="1" Grid.Column="0"/>
+        <TextBox x:Name="txtPass" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="btnLogin" Content="Login" Grid.Row="2" Width="50" Height="15" FontSize="8" HorizontalAlignment="right" Click="btnLogin_Click"/>
     </Grid>
 </Window>

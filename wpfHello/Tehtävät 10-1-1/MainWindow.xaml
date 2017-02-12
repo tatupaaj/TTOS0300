@@ -8,11 +8,11 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <StackPanel>
-            <StackPanel>
-                <CheckBox x:Name="chcMaito" Content="Maito" Margin="10" FontSize="14" Checked="chcMaito_Checked"/>
-                <CheckBox x:Name="chcPepsi" Content="Pepsi" Margin="10" FontSize="14" Checked="chcPepsi_Checked"/>
-                <CheckBox x:Name="chcJuusto" Content="Juusto" Margin="10" FontSize="14" Checked="chcJuusto_Checked"/>
-                <CheckBox x:Name="chcKana" Content="Kana" Margin="10" FontSize="14" Checked="chcKana_Checked"/>
+            <StackPanel x:Name="stpList">
+                <CheckBox x:Name="chcMaito" Content="Maito" Margin="10" FontSize="14"/>
+                <CheckBox x:Name="chcPepsi" Content="Pepsi" Margin="10" FontSize="14"/>
+                <CheckBox x:Name="chcJuusto" Content="Juusto" Margin="10" FontSize="14"/>
+                <CheckBox x:Name="chcKana" Content="Kana" Margin="10" FontSize="14"/>
                 <Button x:Name="btnBuy" Content="Buy" Margin="10" Width="60" HorizontalAlignment="Left" FontSize="14" Click="btnBuy_Click"/>
             </StackPanel>
             <StackPanel>

@@ -13,32 +13,33 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tehtävät_10_1_1
+namespace Tehtävät_10_3
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        public string items;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-
-        private void btnBuy_Click(object sender, RoutedEventArgs e)
+        private void cmbGame_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            foreach (object control in stpList.Children)
+            StringBuilder sb = new StringBuilder();
+            foreach (string name in cmbGame.Items)
             {
-                if (control is CheckBox)
-                {
-                    CheckBox chcBox = (CheckBox)control;
-                    if ((bool)chcBox.IsChecked) items += chcBox.Content + " ";
-                }
+                sb.Append(name);
+                sb.Append(" ");
             }
-            txbList.Text = items;
+            cmbGame.Items.Add("Lotto");
+            MessageBox.Show(sb.ToString());
+        }
+
+        private void btnDraw_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
-

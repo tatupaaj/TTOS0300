@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,14 @@ namespace Tehtävät_10_2
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine(txtLogin.Text + "" + txtPass.Text);
+
+           /* Tulosta tulostaWin = new Tehtävät_10_2.Tulosta();
+            tulostaWin.Show();*/
         }
     }
 }
