@@ -1,0 +1,56 @@
+﻿<Window x:Class="T11Esim2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T11Esim2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <sys:String x:Key="MyAppName">Tatu mahti sovellus</sys:String>
+        <x:Array x:Key="myBands" Type="sys:String">
+            <sys:String>Amon amarth</sys:String>
+            <sys:String>Blind Guardian</sys:String>
+            <sys:String>Insomnium</sys:String>
+        </x:Array>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+        <StackPanel Background="#FFBDC33E" Orientation="Vertical" Width="150">
+            <Label x:Name="lblBind" Content="Binding to element:"/>
+                <TextBox x:Name="txtTesti" Width="100"/>
+                <TextBlock x:Name="txbTouch" Text="{Binding ElementName=txtTesti, Path=Text}"/>
+            <Label x:Name="lblMe" Content="Touch me!"/>
+            <TextBlock x:Name="txbNumber" Text="{Binding ElementName=txtTesti, Path=Text.Length}"/>
+        </StackPanel>
+            <StackPanel Orientation="Vertical" Width="200" x:Name="spMiddle" Background="{Binding ElementName=cmbColors, Path=SelectedItem.Content, Mode=OneWay}">
+            <Label x:Name="lblStatic" Content="Binding to static resources"/>
+                <ComboBox x:Name="cmbColors">
+                    <ListBoxItem Content="Azure"/>
+                    <ListBoxItem Content="Blue"/>
+                    <ListBoxItem Content="Green"/>
+                    <ListBoxItem Content="Yellow"/>
+                </ComboBox>
+                <Separator Height="15" Background="Beige" BorderThickness="0"/>
+                <TextBlock Text="{Binding Source={StaticResource MyAppName}}" Foreground="Crimson" />
+                <TextBlock Text="Valiste suosiki bändisi"/>
+                <ComboBox x:Name="cmbBands" Width="200" ItemsSource="{Binding Source={StaticResource myBands}}" />
+                <TextBlock Text="Comboboksin täyttäminen koodista"/>
+                <ComboBox x:Name="cmbMovies" Width="200" />
+                <TextBlock Text="Valitse Suosikkijoukkueesi"/>
+                <ComboBox x:Name="cmbTeams" Width="200"/>
+            </StackPanel>
+            <StackPanel Background="#FFB44949" Orientation="Vertical" Width="160" x:Name="spRight">
+             <Label x:Name="lblCollection" Content="collection:"/>
+                <Button x:Name="btnBind" Content="Sido olio-kokoelmaan" Click="btnBind_Click"/>
+                <Label x:Name="lblJKL" Content="teksti"/>
+            <TextBox x:Name="txtName" Text="{Binding Path=Name}"/>
+            <TextBox x:Name="txtCity" Text="{Binding Path=City}"/>
+            <Button x:Name="btnBack" Content="Back"/>
+            <Button x:Name="btnForward" Content="Forward"/>
+            <Button x:Name="btnNew" Content="new"/>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht채v채t 10-2", "Teht채v�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht채v채t 10-3", "Teht채v채t 10-3\Teht채v채t 10-3.csproj", "{01C26A75-1770-4D15-A037-0773FE9F62F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T11Esim", "T11Esim\T11Esim.csproj", "{ADDE9983-ECE5-4618-A5E9-80C4E9DFB44A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T11Esim2", "T11Esim2\T11Esim2.csproj", "{95D37FC6-01BC-429D-B20E-43E9BF5B7367}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{01C26A75-1770-4D15-A037-0773FE9F62F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01C26A75-1770-4D15-A037-0773FE9F62F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01C26A75-1770-4D15-A037-0773FE9F62F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDE9983-ECE5-4618-A5E9-80C4E9DFB44A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDE9983-ECE5-4618-A5E9-80C4E9DFB44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDE9983-ECE5-4618-A5E9-80C4E9DFB44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDE9983-ECE5-4618-A5E9-80C4E9DFB44A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95D37FC6-01BC-429D-B20E-43E9BF5B7367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95D37FC6-01BC-429D-B20E-43E9BF5B7367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95D37FC6-01BC-429D-B20E-43E9BF5B7367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95D37FC6-01BC-429D-B20E-43E9BF5B7367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
