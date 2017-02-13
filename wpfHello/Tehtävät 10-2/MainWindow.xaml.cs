@@ -29,9 +29,6 @@ namespace Tehtävät_10_2
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             Debug.WriteLine(txtLogin.Text + "" + txtPass.Text);
-
-           /* Tulosta tulostaWin = new Tehtävät_10_2.Tulosta();
-            tulostaWin.Show();*/
         }
     }
 }
