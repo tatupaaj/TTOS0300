@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Tehtävät_10_2"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid Background="Khaki">
+    <Grid Background="Khaki" Height="100">
+        <Grid.Margin>100</Grid.Margin>
         <Grid.RowDefinitions>
             <RowDefinition Height="25" />
             <RowDefinition Height="25" />
