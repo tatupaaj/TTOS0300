@@ -50,5 +50,6 @@ namespace JAMK.ICT
         {
             return teams;
         }
+
     }
 }

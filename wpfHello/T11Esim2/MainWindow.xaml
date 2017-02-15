@@ -47,9 +47,14 @@
                 <Label x:Name="lblJKL" Content="teksti"/>
             <TextBox x:Name="txtName" Text="{Binding Path=Name}"/>
             <TextBox x:Name="txtCity" Text="{Binding Path=City}"/>
-            <Button x:Name="btnBack" Content="Back"/>
-            <Button x:Name="btnForward" Content="Forward"/>
-            <Button x:Name="btnNew" Content="new"/>
+            <Button x:Name="btnBack" Content="Back" Click="btnBack_Click"/>
+            <Button x:Name="btnForward" Content="Forward" Click="btnForward_Click"/>
+                <Label x:Name="lblLisays" Content="Uuden joukkueen lisäys: "/>
+                <Label x:Name="lblNimi" Content="-Nimi: "/>
+                <TextBox x:Name="txtNimi" FontSize="12" Text="{Binding ElementName=txtName, Path=Text}"/>
+                <Label x:Name="lblKaupunki" Content="-Kaupunki: "/>
+                <TextBox x:Name="txtKaupunki" FontSize="12" Text="{Binding ElementName=txtCity, Path=text}"/>
+                <Button x:Name="btnLisaa" Content="Lisää joukkue liigaan" Click="btnLisaa_Click"/>
         </StackPanel>
         </StackPanel>
     </Grid>

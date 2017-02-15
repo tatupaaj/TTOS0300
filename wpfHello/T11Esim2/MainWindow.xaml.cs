@@ -25,6 +25,7 @@ namespace T11Esim2
         // Koska useampi metodi=tapahtumankasittelija tulee kayttamaan naita muuttujia --> maaritellaan
         JAMK.ICT.HockeyLeague liiga;
         ObservableCollection<JAMK.ICT.HockeyTeam> joukkueet;
+        JAMK.ICT.HockeyTeam joukkue;
         int counter = 0;
         public MainWindow()
         {
@@ -44,6 +45,9 @@ namespace T11Esim2
             liiga = new JAMK.ICT.HockeyLeague();
             joukkueet = liiga.GetTeams();
             cmbTeams.ItemsSource = joukkueet;
+            // add team
+            joukkue = new JAMK.ICT.HockeyTeam();
+            joukkueet.Add(joukkue);
             
         }
 
@@ -55,6 +59,25 @@ namespace T11Esim2
             //spRight.DataContext = tiimi;
             // demo2: kytketään olio-kokoelman 1. olioon
             spRight.DataContext = joukkueet[counter];
+            //demo3
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            counter--;
+            btnBind_Click(sender, e);
+        }
+
+        private void btnForward_Click(object sender, RoutedEventArgs e)
+        {
+            counter++;
+            btnBind_Click(sender, e);
+        }
+
+        private void btnLisaa_Click(object sender, RoutedEventArgs e)
+        {
+            HockeyTeam joukkue = new HockeyTeam(txtNimi.Text, txtKaupunki.Text);
+            
         }
     }
 }
