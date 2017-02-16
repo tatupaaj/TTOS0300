@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T11Esim", "T11Esim\T11Esim.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T11Esim2", "T11Esim2\T11Esim2.csproj", "{95D37FC6-01BC-429D-B20E-43E9BF5B7367}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtävät 11-3", "Tehtävät 11-3\Tehtävät 11-3.csproj", "{F1714D25-7255-4709-A34B-E2BE0F2816D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{95D37FC6-01BC-429D-B20E-43E9BF5B7367}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95D37FC6-01BC-429D-B20E-43E9BF5B7367}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95D37FC6-01BC-429D-B20E-43E9BF5B7367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1714D25-7255-4709-A34B-E2BE0F2816D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1714D25-7255-4709-A34B-E2BE0F2816D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1714D25-7255-4709-A34B-E2BE0F2816D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1714D25-7255-4709-A34B-E2BE0F2816D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

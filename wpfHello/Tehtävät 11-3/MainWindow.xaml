@@ -1,0 +1,37 @@
+﻿<Window x:Class="Tehtävät_11_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtävät_11_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="170">
+                <TextBlock x:Name="txbHenkilo1" Text="jotain" FontSize="16"></TextBlock>
+                <TextBlock x:Name="txbHenkilo2" Text="jotain" FontSize="16"></TextBlock>
+                <TextBlock x:Name="txbHenkilo3" Text="jotain" FontSize="16"></TextBlock>
+                <TextBlock x:Name="txbHenkilo4" Text="jotain" FontSize="16"></TextBlock>
+            </StackPanel>
+            <StackPanel Width="177" Background="LightBlue">
+                <Label x:Name="lblTiedot" Content="Työntekijän tiedot" FontSize="16"></Label>
+                <Label x:Name="lblEtunimi" Content="Etunimi" FontSize="16"></Label>
+                <TextBlock x:Name="txbEtunimi" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <Label x:Name="lblSukunimi" Content="Sukunimi" FontSize="16"></Label>
+                <TextBlock x:Name="txbSukunimi" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <Label x:Name="lblNumero" Content="Työntekijänumero" FontSize="16"></Label>
+                <TextBlock x:Name="txbNumero" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <Label x:Name="lblTitteli" Content="Titteli" FontSize="16"></Label>
+                <TextBlock x:Name="txbTitteli" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <Label x:Name="lblPalkka" Content="Palkka" FontSize="16"></Label>
+                <TextBlock x:Name="txbPalkka" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+            </StackPanel>
+            <StackPanel Width="170" Background="LightSkyBlue">
+                <Label x:Name="lblHae" Content="Hae tietoja" FontSize="16"></Label>
+                <Button x:Name="btnHae" Content="Hae työntekijä" FontSize="16" Margin="10"></Button>
+                <Button x:Name="btnTyhjenna" Content="Tyhjennä" FontSize="16" Margin="10"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

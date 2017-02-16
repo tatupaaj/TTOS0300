@@ -36,6 +36,7 @@ namespace JAMK.ICT
     public class HockeyLeague
     {
         ObservableCollection<HockeyTeam> teams = new ObservableCollection<HockeyTeam>();
+        public ObservableCollection<HockeyTeam> Teams { get { return teams; } }
         //Constructor
         public HockeyLeague()
         {
@@ -45,11 +46,12 @@ namespace JAMK.ICT
             teams.Add(new HockeyTeam("Kalpa"));
             teams.Add(new HockeyTeam("Lukko", "Rauma"));
         }
+
         //Methods
         public ObservableCollection<HockeyTeam> GetTeams()
         {
             return teams;
         }
-
+        
     }
 }
