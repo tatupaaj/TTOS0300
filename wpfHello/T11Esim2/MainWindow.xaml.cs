@@ -45,8 +45,6 @@ namespace T11Esim2
             liiga = new JAMK.ICT.HockeyLeague();
             joukkueet = liiga.GetTeams();
             cmbTeams.ItemsSource = joukkueet;
-            // add team
-
 
         }
 
@@ -74,10 +72,10 @@ namespace T11Esim2
 
         private void btnLisaa_Click(object sender, RoutedEventArgs e)
         {
-            HockeyTeam t = new HockeyTeam();
-            t.Name = txtNimi.Text;
-            t.City = txtKaupunki.Text;
-            joukkueet.Add(t);
+            HockeyTeam team = new HockeyTeam();
+            team.Name = txtNimi.Text;
+            team.City = txtKaupunki.Text;
+            joukkueet.Add(team);
 
         }
     }
