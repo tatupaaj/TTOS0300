@@ -9,28 +9,26 @@
     <Grid>
         <StackPanel Orientation="Horizontal">
             <StackPanel Width="170">
-                <TextBlock x:Name="txbHenkilo1" Text="jotain" FontSize="16"></TextBlock>
-                <TextBlock x:Name="txbHenkilo2" Text="jotain" FontSize="16"></TextBlock>
-                <TextBlock x:Name="txbHenkilo3" Text="jotain" FontSize="16"></TextBlock>
-                <TextBlock x:Name="txbHenkilo4" Text="jotain" FontSize="16"></TextBlock>
+                <ListBox x:Name="lbxTyontekijat" Height="200" SelectionChanged="lbxTyontekijat_SelectionChanged"></ListBox>
             </StackPanel>
             <StackPanel Width="177" Background="LightBlue">
                 <Label x:Name="lblTiedot" Content="Työntekijän tiedot" FontSize="16"></Label>
                 <Label x:Name="lblEtunimi" Content="Etunimi" FontSize="16"></Label>
-                <TextBlock x:Name="txbEtunimi" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <TextBlock x:Name="txbEtunimi" Text="" FontSize="16" Margin="5,0,5,0" Background="White"></TextBlock>
                 <Label x:Name="lblSukunimi" Content="Sukunimi" FontSize="16"></Label>
-                <TextBlock x:Name="txbSukunimi" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <TextBlock x:Name="txbSukunimi" Text="" FontSize="16" Margin="5,0,5,0" Background="White"></TextBlock>
                 <Label x:Name="lblNumero" Content="Työntekijänumero" FontSize="16"></Label>
-                <TextBlock x:Name="txbNumero" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <TextBlock x:Name="txbNumero" Text="" FontSize="16" Margin="5,0,5,0" Background="White"></TextBlock>
                 <Label x:Name="lblTitteli" Content="Titteli" FontSize="16"></Label>
-                <TextBlock x:Name="txbTitteli" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <TextBlock x:Name="txbTitteli" Text="" FontSize="16" Margin="5,0,5,0" Background="White"></TextBlock>
                 <Label x:Name="lblPalkka" Content="Palkka" FontSize="16"></Label>
-                <TextBlock x:Name="txbPalkka" Text="j" FontSize="16" Margin="5,0,5,0"></TextBlock>
+                <TextBlock x:Name="txbPalkka" Text="" FontSize="16" Margin="5,0,5,0" Background="White"></TextBlock>
             </StackPanel>
             <StackPanel Width="170" Background="LightSkyBlue">
                 <Label x:Name="lblHae" Content="Hae tietoja" FontSize="16"></Label>
-                <Button x:Name="btnHae" Content="Hae työntekijä" FontSize="16" Margin="10"></Button>
-                <Button x:Name="btnTyhjenna" Content="Tyhjennä" FontSize="16" Margin="10"></Button>
+                <Button x:Name="btnHae" Content="Hae työntekijät" FontSize="16" Margin="10" Click="btnHae_Click"></Button>
+                <Button x:Name="btnTyhjenna" Content="Tyhjennä" FontSize="16" Margin="10" Click="btnTyhjenna_Click"></Button>
+                <Button x:Name="btnYlikirjoita" Content="Ylikirjoita" FontSize="16" Margin="10" Click="btnYlikirjoita_Click"></Button>
             </StackPanel>
         </StackPanel>
     </Grid>

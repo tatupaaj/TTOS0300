@@ -25,7 +25,6 @@ namespace T11Esim2
         // Koska useampi metodi=tapahtumankasittelija tulee kayttamaan naita muuttujia --> maaritellaan
         JAMK.ICT.HockeyLeague liiga;
         ObservableCollection<JAMK.ICT.HockeyTeam> joukkueet;
-        public HockeyLeague ViewModel { get; set; }
         int counter = 0;
         public MainWindow()
         {
@@ -47,7 +46,6 @@ namespace T11Esim2
             joukkueet = liiga.GetTeams();
             cmbTeams.ItemsSource = joukkueet;
             // add team
-            this.ViewModel = new HockeyLeague();
 
 
         }
@@ -76,7 +74,10 @@ namespace T11Esim2
 
         private void btnLisaa_Click(object sender, RoutedEventArgs e)
         {
-            ViewModel.AddHockeyLeague(txtNimi.Text, txtKaupunki.Text);
+            HockeyTeam t = new HockeyTeam();
+            t.Name = txtNimi.Text;
+            t.City = txtKaupunki.Text;
+            joukkueet.Add(t);
 
         }
     }

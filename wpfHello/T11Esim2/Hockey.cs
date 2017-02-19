@@ -36,7 +36,6 @@ namespace JAMK.ICT
     public class HockeyLeague
     {
         ObservableCollection<HockeyTeam> teams = new ObservableCollection<HockeyTeam>();
-        public ObservableCollection<HockeyTeam> Teams { get { return teams; } }
         //Constructor
         public HockeyLeague()
         {
