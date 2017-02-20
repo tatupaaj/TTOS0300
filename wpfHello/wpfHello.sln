@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T11Esim2", "T11Esim2\T11Esi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtävät 11-3", "Tehtävät 11-3\Tehtävät 11-3.csproj", "{F1714D25-7255-4709-A34B-E2BE0F2816D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T12Esim", "T12Esim\T12Esim.csproj", "{E13416CA-5C7A-403F-B022-05C706EF338F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{F1714D25-7255-4709-A34B-E2BE0F2816D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1714D25-7255-4709-A34B-E2BE0F2816D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1714D25-7255-4709-A34B-E2BE0F2816D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13416CA-5C7A-403F-B022-05C706EF338F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13416CA-5C7A-403F-B022-05C706EF338F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13416CA-5C7A-403F-B022-05C706EF338F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13416CA-5C7A-403F-B022-05C706EF338F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
