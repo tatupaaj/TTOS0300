@@ -23,8 +23,18 @@ namespace T12Esim
         T12Esim.ViewModel.StudentViewModel svmo = new ViewModel.StudentViewModel();
         public MainWindow()
         {
-            InitializeComponent();
-            svmo.Loadstudents();
+            //InitializeComponent();
+            //svmo.Loadstudents();
+            try
+            {
+                //oppilaat tietokannasta
+                svmo.LoadStudentsFromMysql();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void StudentViewControl_Loaded(object sender, RoutedEventArgs e)
