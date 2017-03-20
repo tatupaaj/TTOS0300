@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtävät 11-3", "Tehtäv�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T12Esim", "T12Esim\T12Esim.csproj", "{E13416CA-5C7A-403F-B022-05C706EF338F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFThreadDemo", "WPFThreadDemo\WPFThreadDemo.csproj", "{E2D925F0-9D68-4B3A-8117-8B1020F2157A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFVRTrains", "WPFVRTrains\WPFVRTrains.csproj", "{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{E13416CA-5C7A-403F-B022-05C706EF338F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E13416CA-5C7A-403F-B022-05C706EF338F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E13416CA-5C7A-403F-B022-05C706EF338F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2D925F0-9D68-4B3A-8117-8B1020F2157A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2D925F0-9D68-4B3A-8117-8B1020F2157A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2D925F0-9D68-4B3A-8117-8B1020F2157A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2D925F0-9D68-4B3A-8117-8B1020F2157A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
