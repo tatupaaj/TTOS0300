@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFThreadDemo", "WPFThreadD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFVRTrains", "WPFVRTrains\WPFVRTrains.csproj", "{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeWPF", "SnakeWPF\SnakeWPF.csproj", "{FECBC6A4-13DB-4970-BC6E-E16048A465B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF2E8830-FF32-4BC7-942A-8C19CD9E0CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECBC6A4-13DB-4970-BC6E-E16048A465B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECBC6A4-13DB-4970-BC6E-E16048A465B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECBC6A4-13DB-4970-BC6E-E16048A465B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECBC6A4-13DB-4970-BC6E-E16048A465B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
